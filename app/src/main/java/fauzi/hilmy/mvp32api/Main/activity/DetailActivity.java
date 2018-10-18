@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
+import com.squareup.picasso.Picasso;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -51,8 +51,9 @@ public class DetailActivity extends AppCompatActivity {
 
         getSupportActionBar().setTitle(name);
 
-        Glide.with(this)
+        Picasso.get()
                 .load(flag)
+                .fit()
                 .into(imgFlag);
         txtName.setText(name);
         txtSubregion.setText(subRegion);

@@ -49,6 +49,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
         android:layout_marginLeft="25dp"
+        app:fontFamily="@font/bungee"
         android:textColor="@android:color/black"
         android:textSize="16sp"
         tools:text="افغانستان" />
@@ -68,7 +69,7 @@
         android:layout_marginLeft="25dp"
         android:textColor="@android:color/black"
         android:textSize="16sp"
-        app:fontFamily="@font/arbutus"
+        app:fontFamily="@font/bungee"
         tools:text="Asia" />
 
     <TextView

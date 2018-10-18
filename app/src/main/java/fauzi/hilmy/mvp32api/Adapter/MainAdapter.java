@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -46,8 +46,9 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MyViewHolder> 
     public void onBindViewHolder(@NonNull MainAdapter.MyViewHolder myViewHolder, int i) {
         final ResponseItem item = itemList.get(i);
         myViewHolder.txtCountry.setText(item.getName());
-        Glide.with(context)
+        Picasso.get()
                 .load(item.getFlagPng())
+                .fit()
                 .into(myViewHolder.imageView);
 
         myViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
