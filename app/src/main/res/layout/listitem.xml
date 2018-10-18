@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp">
+
+    <ImageView
+        android:id="@+id/imgCountry"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/txtCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/imgCountry"
+        android:background="#9fb9b9b9"
+        android:gravity="center"
+        android:padding="7dp"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:fontFamily="@font/arbutus"
+        tools:text="Afghanistan" />
+</RelativeLayout>
